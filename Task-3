@@ -1,49 +1,40 @@
-Practical Task -3
+//Practical-Task-3 //
 // Object car //
-const car ={
-    color:"black",
-    power(){
-        power:;
+const car = {
+    color: "black",
+    power() {
+        this.power = 200;
     }
 }
 car.color = "green";
 car.power();
 console.log(car)
-
 // pears and apples //
-
-function sum (pears,apples){
-    return pears+apples;
+function sum (pears, apples) {
+    return pears + apples;
 }
-const result =sum(5,10);
+const result = sum (5, 10);
 console.log(result);
-
 //payment terminal
-let userName = "John";
-if (userName === "Aleksandr") 
-    console.log("Hello" +" "+userName)
- else {
-    console.log("The error")
+const userName = "John";
+    if (userName === "Aleksandr");
+        console.log("Hello" +" "+userName);
+    else {
+        console.log("The error");
  }
 //  typeof //
-function type(value) {
-    console.log (typeof value)
+function type (value) {
+    console.log (typeof value);
 }
 type(false);
 
 // prime number //
-
-function number(a){
-    for (let i=2;i<a-1;i++){
-        if (a%i==1) {
-            console.log(a+"-" + "Is a prime number");
-           break;
-
-        }else{
-            console.log(a +"-"+"Is not a prime number");
-             break;
-            } 
-            
-        }
-}
-number(13);
+  function primeNumber(number) {
+    for (let i = 2; i < number; i++) { 
+      if(number % i === 0) return false;
+    }
+    return number > 1; 
+  }
+  
+  console.log(primeNumber(2)); 
+  
